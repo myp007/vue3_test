@@ -1,37 +1,32 @@
 /*
- * @Author: duanxin
+ * @Author: myp
  * @Date: 2024-10-28 14:05:28
- * @LastEditTime: 2024-10-28 14:52:45
+ * @LastEditTime: 2024-10-30 11:47:38
  * @Description: 
- * @FilePath: \work\block_h5\src\router\index.js
+ * @FilePath: \vue3_h5\src\router\index.js
  */
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import index from '../views/index.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView
+      name: 'index',
+      component: index
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
+      path: '/search',
+      name: 'search',
+      component: () => import('../views/search/search.vue')
     },
     {
-      path: '/test',
-      name: 'test',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/Test.vue')
-    }
+      path: '/user',
+      name: 'user',
+      component: () => import('../views/user/user.vue')
+    },
+    
   ]
 })
 
