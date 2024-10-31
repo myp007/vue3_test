@@ -1,12 +1,12 @@
 <!--
  * @Author: m
  * @Date: 2024-10-30 11:34:33
- * @LastEditTime: 2024-10-30 11:34:47
+ * @LastEditTime: 2024-10-31 11:42:40
  * @Description: 
  * @FilePath: \vue3_h5\src\views\home\home.vue
 -->
 <template>
-  <div>
+  <div> home
   </div>
 </template>
 
