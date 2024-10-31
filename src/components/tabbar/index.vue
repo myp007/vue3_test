@@ -1,7 +1,7 @@
 <!--
  * @Author: m
  * @Date: 2024-10-31 10:56:59
- * @LastEditTime: 2024-10-31 11:40:27
+ * @LastEditTime: 2024-10-31 14:39:03
  * @Description: 
  * @FilePath: \vue3_h5\src\components\tabbar\index.vue
 -->
@@ -28,7 +28,7 @@ const props = defineProps({
  
 const router = useRouter()
 const tabs = ref([])
-const activeIndex = ref(0);
+let activeIndex = ref(0);
  
 watchEffect(() => {
 	tabs.value = props.tabs;
@@ -42,7 +42,9 @@ const selectTab = (index,path) => {
 };
  
 onMounted(() => {
-
+	let tab_path = router.currentRoute.value.path
+	let i =  tabs.value.findIndex((item) => item.path == tab_path)
+	activeIndex.value = i < 0 ? 0 : i
 })
 </script>
 
@@ -58,6 +60,9 @@ onMounted(() => {
   .tabbar-item{
 	text-align: center;
 	flex: 1;
+  }
+  .active{
+	color: #1989fa;
   }
 }
 </style>

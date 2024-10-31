@@ -1,7 +1,7 @@
 <!--
  * @Author: myp
  * @Date: 2024-10-28 14:05:28
- * @LastEditTime: 2024-10-31 13:37:32
+ * @LastEditTime: 2024-10-31 14:41:08
  * @Description: 
  * @FilePath: \vue3_h5\src\views\index.vue
 -->
@@ -21,6 +21,7 @@ import tabbar from '@/components/tabbar/index.vue';
  
 const tabs = [
   { title: '首頁', path: '/home' },
+  { title: '搜索', path: '/search' },
   { title: '我的', path: '/user' },
 ];
  

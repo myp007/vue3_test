@@ -1,7 +1,7 @@
 /*
  * @Author: myp
  * @Date: 2024-10-28 14:05:28
- * @LastEditTime: 2024-10-31 10:55:18
+ * @LastEditTime: 2024-10-31 14:40:51
  * @Description: 
  * @FilePath: \vue3_h5\src\router\index.js
  */
@@ -32,11 +32,11 @@ const router = createRouter({
           }
         },
   
-        // {
-        //   path: '/search',
-        //   name: 'search',
-        //   component: () => import('@/views/search/search.vue')
-        // },
+        {
+          path: '/search',
+          name: 'search',
+          component: () => import('@/views/search/search.vue')
+        },
         {
           path: '/user',
           name: 'user',
