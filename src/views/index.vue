@@ -1,12 +1,13 @@
 <!--
  * @Author: myp
  * @Date: 2024-10-28 14:05:28
- * @LastEditTime: 2024-10-31 14:41:08
+ * @LastEditTime: 2024-11-01 18:21:07
  * @Description: 
  * @FilePath: \vue3_h5\src\views\index.vue
 -->
 <template>
   <div class="tabbar">
+  123123
     <tabbar :tabs='tabs'/> 
     <router-view v-slot="{ Component }">
       <keep-alive>

@@ -1,9 +1,9 @@
 /*
  * @Author: myp
  * @Date: 2024-10-28 15:24:27
- * @LastEditTime: 2024-10-28 17:22:57
+ * @LastEditTime: 2024-11-04 13:41:42
  * @Description: 
- * @FilePath: \block_h5\src\main.js
+ * @FilePath: \vue3_h5\src\main.js
  */
 import './assets/main.css'
 
@@ -16,6 +16,7 @@ import i18n from "./vueI18n/index";
 
 import App from './App.vue'
 import router from './router'
+import './mock/index'
 
 const app = createApp(App)
 
